@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8" />
+  <title>Start Page</title>
+  <meta name="CISW 400 Final Project" content="" />
+  <meta name="Peter Wirtz" content="" />
+
+  <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- FONT
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css" />
+
+  <!-- CSS
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JS
+              –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script defer src="js/script.js"></script>
+
+  <!-- Favicon
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+  <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="header-img"></div>
+  <div class="container">
+    <div class="row" style="margin: 5% 0 5% 0">
+
+      <div class="six columns">
+        <div id="intro">
+          <h2>My Start Page</h2>
+          <p>
+            Welcome: It is <span id="date"></span>. Here are some news headlines and a few podcasts to choose from.
+          </p>
+        </div>
+
+        <div id="search_section" style="margin-top: 10px">
+          <form action="javascript:void(0);" id="searchform">
+            <select name="engine" id="engine">
+              <option value="google">Google</option>
+              <option value="duckduckgo">Duck Duck Go</option>
+              <option value="startpage">Start Page</option>
+              <option value="stackoverflow">Stack Overflow</option>
+            </select>
+            <input type="text" id="search_term" name="search_term" placeholder="Search Query" />
+            <input type="submit" name="go" id="gobtn" value="Go!" class="button-primary" />
+          </form>
+        </div>
+        <!-- end column -->
+      </div>
+
+      <div id="podcast" class="six columns" style="margin-top: 8%">
+        <div id="selPodcast">
+          <form id="pSelect" action="javascript:void(0);">
+            <select name="podcasts" id="podcasts-dropdown" class="u-threeQuarter-width">
+              <option value="none" selected disabled hidden>Select Podcast</option>
+              <option value="search">Search...</option>
+            </select>
+            <input type="text" id="search" class="u-full-width"></button>
+            <input type="submit" name="getPCbtn" id="getPCbtn" value="Get it.">
+            <div id='error'></div>
+          </form>
+        </div>
+        <div id="info"></div>
+        <audio id="player" controls>
+          <source id="source" src="" type="audio/mpeg">
+          Your browser does not support the <audio> element.
+          </audio>
+      </div>
+      <!-- end column -->
+    </div>
+    <!-- end row -->
+    <div id="newsnav" class="navBar row" style="">
+      <ul></ul>
+      <select>
+      </select>
+    </div>
+    <div id="news" class="row">
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+
+  <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
